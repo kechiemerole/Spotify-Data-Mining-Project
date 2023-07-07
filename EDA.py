@@ -31,3 +31,17 @@ plt.ylabel('Number of Listens')
 plt.title('Top 10 Most Listened to Artists')
 plt.xticks(rotation=90)
 plt.show()
+
+track_counts = data['trackName'].value_counts()
+
+# Select the top 10 artists
+top_10_tracks = track_counts.head(10)
+
+# Plot the bar chart for the top 10 artists
+plt.bar(top_10_tracks.index, top_10_tracks.values)
+plt.xlabel('Track')
+plt.ylabel('Number of Listens')
+plt.title('Top 10 Most Listened to Tracks')
+plt.xticks(rotation=90)
+plt.show()
+

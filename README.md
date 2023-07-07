@@ -10,6 +10,11 @@
 6. Evaluation and Validation
 7. Conclusion and Results
 
+### Questions
+1. Does the season of the year determine listening habits?
+2. Is there a correlation between the duration of listening sessions and specific artists?
+3. Are there any notable trends or patterns in the listening history over time?
+4. What are the most listened to artists, albums, or songs in my data?
 
 ## Introduction
 Spotify is a widely recognized digital music streaming service that originated in April 2006 in Stockholm, Sweden. Over the years, it has established itself as a dominant force in the music industry, offering a vast collection of songs, podcasts, and other audio content to its users.
@@ -23,7 +28,7 @@ As an avid user of Spotify, I have embarked on a project to analyze and gain ins
 ### Data Collection
 To commence this project, I have acquired a copy of the basic package of my Spotify data, which encompasses a comprehensive set of information related to my streaming and listening activities. The data package includes details such as playlists, streaming history from the past year, items saved in my library, search queries, follower counts, accounts followed, blocked accounts, payment and subscription data, user information, customer service history, family plan data, inferences, voice inputs, podcast interactivity, and Spotify for Artists data.
 
-The data has been obtained from my Spotify listening history at https://www.spotify.com/ca-en/account/privacy/ using the “Download your data tool”. The preparation time for this request took about 5 business days. 
+The data has been obtained from my Spotify listening history at https://www.spotify.com/ca-en/account/privacy/ using the “Download your data tool”. The preparation time for this request took about 5 business days. The data spans from July 2, 2022 to July 2, 2023 which is a years worth of my listening habits.
 
 ### Data Preprocessing 
 At this stage, I have successfully extracted the data from the downloaded Spotify package, encompassing user listening history, playlists, artists, and albums. However, since the raw data is initially in JSON format, it necessitates conversion to a more manageable format for analysis, such as CSV.

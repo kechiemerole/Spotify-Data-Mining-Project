@@ -38,6 +38,5 @@ result = pd.read_csv("myDataCombined.csv")
 # and view the data
 print(result)
 
-df.head()
 
 

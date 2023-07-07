@@ -17,6 +17,15 @@ print(null_values)
 # _________________________________________________________________________________________________
 # Read the CSV file into a DataFrame
 data = pd.read_csv("myDataCombined.csv")
+data.describe()
+data.info()
+
+
+# Convert the duration of msPlayed to seconds from milliseconds 
+data['duration_sec'] = data['msPlayed'].apply(lambda x: x / 1000)
+data.drop('msPlayed', inplace = True, axis = 1)
+print(data)
+
 
 # Count the occurrences of each artist
 artist_counts = data['artistName'].value_counts()

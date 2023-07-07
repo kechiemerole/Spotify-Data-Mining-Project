@@ -23,6 +23,9 @@ As an avid user of Spotify, I have embarked on a project to analyze and gain ins
 ### Data Collection
 To commence this project, I have acquired a copy of the basic package of my Spotify data, which encompasses a comprehensive set of information related to my streaming and listening activities. The data package includes details such as playlists, streaming history from the past year, items saved in my library, search queries, follower counts, accounts followed, blocked accounts, payment and subscription data, user information, customer service history, family plan data, inferences, voice inputs, podcast interactivity, and Spotify for Artists data.
 
+### Data Preprocessing 
+I have checked for null values and it appears that the data is complete without any missing values. Outliers in this data will tell us a lot about my listening habit so they will not be omitted form the dataset. 
+
 ### Data Analysis
 Using data mining techniques and exploratory data analysis, I will delve into the acquired Spotify data to uncover valuable insights about my music consumption patterns. By examining factors such as play counts, duration, genre preferences, and temporal trends, I aim to gain a deeper understanding of my musical preferences and habits.
 

@@ -54,3 +54,21 @@ plt.title('Top 10 Most Listened to Tracks')
 plt.xticks(rotation=90)
 plt.show()
 
+
+
+# Read the Spotify dataset into a DataFrame
+data = pd.read_csv("myDataCombined.csv")
+
+# Convert the endtime column to a datetime datatype
+data['endTime'] = pd.to_datetime(data['endTime'])
+
+# Group the data by month and sum the duration played in milliseconds
+monthly_duration = data.groupby(data['endTime'].dt.month)['msPlayed'].sum()
+
+# Plot the duration played by month
+plt.plot(monthly_duration.index, monthly_duration.values)
+plt.xlabel('Month')
+plt.ylabel('Duration (ms)')
+plt.title('Duration Played by Month')
+plt.xticks(range(1, 13))
+plt.show()

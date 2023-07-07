@@ -32,9 +32,9 @@ artist_counts = data['artistName'].value_counts()
 
 # Select the top 10 artists
 top_10_artists = artist_counts.head(10)
-
+spotify_green = ['#1DB954']
 # Plot the bar chart for the top 10 artists
-plt.bar(top_10_artists.index, top_10_artists.values)
+plt.bar(top_10_artists.index, top_10_artists.values, color=spotify_green)
 plt.xlabel('Artist')
 plt.ylabel('Number of Listens')
 plt.title('Top 10 Most Listened to Artists')
@@ -47,7 +47,7 @@ track_counts = data['trackName'].value_counts()
 top_10_tracks = track_counts.head(10)
 
 # Plot the bar chart for the top 10 artists
-plt.bar(top_10_tracks.index, top_10_tracks.values)
+plt.bar(top_10_tracks.index, top_10_tracks.values, color=spotify_green)
 plt.xlabel('Track')
 plt.ylabel('Number of Listens')
 plt.title('Top 10 Most Listened to Tracks')

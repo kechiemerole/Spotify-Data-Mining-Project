@@ -14,7 +14,7 @@
 1. Does the season of the year determine listening habits?
 2. Is there a correlation between the duration of listening sessions and specific artists?
 3. Are there any notable trends or patterns in the listening history over time?
-4. What are the most listened to artists, albums, or songs in my data?
+4. What are the most listened to artists, or songs in my data?
 
 ## Introduction
 Spotify is a widely recognized digital music streaming service that originated in April 2006 in Stockholm, Sweden. Over the years, it has established itself as a dominant force in the music industry, offering a vast collection of songs, podcasts, and other audio content to its users.

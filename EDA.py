@@ -72,3 +72,31 @@ plt.ylabel('Duration (ms)')
 plt.title('Duration Played by Month')
 plt.xticks(range(1, 13))
 plt.show()
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the Spotify dataset into a DataFrame
+data = pd.read_csv("myDataCombined.csv")
+
+# Convert the date column to datetime datatype
+data['endTime'] = pd.to_datetime(data['endTime'])
+
+# Classify dates into seasons
+data['season'] = data['endTime'].dt.month.map({1: 'Winter', 2: 'Winter', 3: 'Spring', 4: 'Spring', 5: 'Spring',
+                                            6: 'Summer', 7: 'Summer', 8: 'Summer', 9: 'Autumn', 10: 'Autumn',
+                                            11: 'Autumn', 12: 'Winter'})
+
+# Calculate minutes played by converting duration from milliseconds to minutes
+# data['minutes_played'] = data['duration'] / 60000
+
+# Group the data by season and sum the minutes played
+seasonal_minutes = data.groupby('season')['msPlayed'].sum()
+
+# Plot the histogram of minutes played by season
+plt.bar(seasonal_minutes.index, seasonal_minutes.values, color=spotify_green)
+plt.xlabel('Season')
+plt.ylabel('Total Minutes Played')
+plt.title('Minutes Played by Season')
+plt.show()

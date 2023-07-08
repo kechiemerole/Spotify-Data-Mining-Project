@@ -49,3 +49,5 @@ Through the utilization of data visualization methods, I will present the findin
 
 ### Machine Learning and Prediction
 The project will progress to the application of machine learning algorithms and prediction techniques to replicate Spotify's yearly wrapped summary. By leveraging the historical data and utilizing prediction algorithms, I will strive to forecast the most listened-to artists, songs, and genres based on the current dataset. This predictive approach will provide valuable insights into potential future preferences and trends.
+
+
